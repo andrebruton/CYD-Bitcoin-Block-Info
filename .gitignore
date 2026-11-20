@@ -1,0 +1,15 @@
+config.py
+wifi_credentials.json
+*credentials*.json
+.env
+.env.*
+__pycache__/
+.pytest_cache/
+*.pyc
+*.mpy
+venv/
+.venv/
+build/
+firmware/*.bin
+/docs/
+/temp/

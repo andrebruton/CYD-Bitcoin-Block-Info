@@ -1,0 +1,21 @@
+# CYD Bitcoin Project - Python Dependencies
+# 
+# For PC Development (testing before ESP32 deployment):
+# pip install -r requirements.txt
+#
+# For ESP32:
+# Install CircuitPython or MicroPython firmware first
+# Then copy src/ files to device
+# No external dependencies needed on device (use built-ins)
+
+# PC Development Dependencies
+requests>=2.25.0        # HTTP library for API calls (use urequests on ESP32)
+pytest>=6.0.0          # Testing framework (optional, can run tests without it)
+black>=21.0            # Code formatter (optional)
+pytest-cov>=2.10.0     # Test coverage (optional)
+
+# Note on ESP32:
+# - Use `urequests` instead of `requests` (built into MicroPython)
+# - Use built-in `time` module
+# - Use built-in `json` module
+# - Use built-in `hashlib` for SHA256 (Phase 2)
